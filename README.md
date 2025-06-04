@@ -1,41 +1,47 @@
-# Pega Pega! (Pygame)
+# Pega Pega!
 
-Um jogo simples estilo "desvie dos objetos que caem" desenvolvido em Python com a biblioteca Pygame.
+"Pega Pega!" é um jogo arcade simples e divertido desenvolvido em **Pygame**. Seu objetivo é controlar um jogador na parte inferior da tela e evitar que os objetos vermelhos que caem o atinjam. A dificuldade do jogo aumenta progressivamente à medida que você pontua!
 
-## Descrição
+---
 
-O jogador controla um quadrado preto na parte inferior da tela e deve desviar dos quadrados vermelhos que caem do topo.
-A cada objeto desviado, a pontuação aumenta.
-A dificuldade do jogo (velocidade e frequência dos objetos) aumenta progressivamente conforme a pontuação sobe.
-Se o jogador colidir com um objeto vermelho, o jogo é reiniciado.
+## Funcionalidades Principais
+
+* **Controle Intuitivo:** Mova seu jogador para a **esquerda** e para a **direita** usando as teclas de seta.
+* **Objetos Aleatórios:** Objetos vermelhos surgem aleatoriamente no topo da tela e caem em direção ao jogador.
+* **Pontuação:** Ganhe um ponto para cada objeto que conseguir passar pela parte inferior da tela sem colidir com o jogador.
+* **Dificuldade Dinâmica:** A velocidade dos objetos e a frequência de seu surgimento aumentam gradualmente, tornando o desafio cada vez maior.
+* **Reinício Rápido:** Se um objeto colidir com seu jogador, o jogo é instantaneamente reiniciado, e você pode tentar de novo para bater seu recorde!
+
+---
 
 ## Como Jogar
 
-### Pré-requisitos
+1.  **Instalação:** Certifique-se de ter o Pygame instalado. Se não tiver, abra seu terminal e execute:
+    ```bash
+    pip install pygame
+    ```
+2.  **Execução:** Salve o código-fonte como um arquivo Python (ex: `pega_pega.py`) e execute-o a partir do seu terminal:
+    ```bash
+    python pega_pega.py
+    ```
+3.  **Controles:**
+    * **Seta para a Esquerda:** Move o jogador para a esquerda.
+    * **Seta para a Direita:** Move o jogador para a direita.
+4.  **Objetivo:** Deixe os objetos vermelhos passarem pela parte inferior da tela para acumular pontos. Evite a todo custo colidir com eles!
 
-*   Python 3.x
-*   Pygame
+---
 
-Você pode instalar o Pygame com o pip:
-```bash
-pip install pygame
+## Configurações do Jogo
 
-Executando o Jogo
-Navegue até a pasta do projeto no seu terminal:
-cd caminho/para/seu/projeto
+Você pode personalizar a experiência de jogo ajustando as variáveis no início do código:
 
-Execute o script Python:
-python jogo_pega_pega.py
+* `LARGURA_TELA` e `ALTURA_TELA`: Definem o tamanho da janela do jogo.
+* `TAMANHO_JOGADOR`: Altera o tamanho do seu personagem.
+* `velocidade_jogador`: Controla a velocidade de movimento do jogador.
+* `velocidade_objeto_base`: A velocidade inicial com que os objetos caem.
+* `frequencia_objeto_base`: Determina a frequência de surgimento de novos objetos (valores menores significam mais objetos).
+* `incremento_velocidade_objeto`: Quanto a velocidade dos objetos aumenta em cada incremento de dificuldade.
+* `decremento_frequencia_objeto`: O quanto a frequência de objetos é reduzida (tornando-os mais comuns) a cada incremento de dificuldade.
+* `pontos_para_aumentar_dificuldade`: A quantidade de pontos necessária para que o jogo aumente sua dificuldade.
 
-Controles
-Seta Esquerda: Mover o jogador para a esquerda.
-Seta Direita: Mover o jogador para a direita.
-
-Estrutura do Código
-O arquivo principal é jogo_pega_pega.py e contém toda a lógica do jogo, incluindo:
-
-Inicialização do Pygame e da tela.
-Definição de cores e configurações do jogador/objetos.
-Lógica de jogo principal (movimento, criação de objetos, detecção de colisão, pontuação, aumento de dificuldade).
-Desenho dos elementos na tela.
-Função para resetar o estado do jogo.
+Experimente mudar esses valores para criar sua própria versão do "Pega Pega!"!
