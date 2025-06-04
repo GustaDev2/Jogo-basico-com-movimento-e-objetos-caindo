@@ -39,18 +39,3 @@ Definição de cores e configurações do jogador/objetos.
 Lógica de jogo principal (movimento, criação de objetos, detecção de colisão, pontuação, aumento de dificuldade).
 Desenho dos elementos na tela.
 Função para resetar o estado do jogo.
-
-
-**Para criar o arquivo:**
-
-1.  Abra um editor de texto simples (como o Bloco de Notas, VS Code, Sublime Text, etc.).
-2.  Copie e cole o conteúdo acima no editor.
-3.  Salve o arquivo com o nome `README.md` dentro da pasta `c:\Users\gusta\OneDrive\Documentos\Python - 2025\projeto 1\`.
-
-Depois de criar o `README.md`, você pode adicioná-lo e comitá-lo ao seu repositório Git:
-
-```bash
-cd c:\Users\gusta\OneDrive\Documentos\Python - 2025\projeto 1\
-git add README.md
-git commit -m "Adiciona README.md com descrição do jogo e instruções"
-git push origin main
